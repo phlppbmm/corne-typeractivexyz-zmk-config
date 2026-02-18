@@ -3,9 +3,10 @@
  *
  * SPDX-License-Identifier: MIT
  */
+#include "corne.dtsi"
 
 &kscan0 {
-    col-gpios
+    row-gpios
         = <&pro_micro 4 GPIO_ACTIVE_HIGH>
         , <&pro_micro 9 GPIO_ACTIVE_HIGH>
         , <&pro_micro 6 GPIO_ACTIVE_HIGH>
