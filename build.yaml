@@ -13,7 +13,9 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano/nrf52840/zmk
     shield: corne_left nice_view_adapter nice_view
-  - board: nice_nano_v2
+    cmake-args: -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+  - board: nice_nano/nrf52840/zmk
     shield: corne_right nice_view_adapter nice_view
+    cmake-args: -DCMAKE_POLICY_VERSION_MINIMUM=3.5

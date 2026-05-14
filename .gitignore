@@ -1,0 +1,17 @@
+# West workspace (cloned by `west update`, not part of the user config)
+.west/
+zephyr/
+zmk/
+modules/
+optional/
+bootloader/
+tools/
+
+# Build artifacts
+build/
+build-*/
+artifacts/
+
+# Python venv (if anyone creates one here)
+.venv/
+__pycache__/
