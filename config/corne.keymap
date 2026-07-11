@@ -86,7 +86,9 @@
         CLN_SEMI: CLN_SEMI {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&SHFT_CLN>, <&SHFT_SEMI>;
+            // Direkt statt über Makros (SHFT_CLN/SHFT_SEMI) — Makros ließen
+            // extern gehaltene Modifier (Super+Ctrl) fallen, was WM-Binds zerlegte.
+            bindings = <&kp DE_COLON>, <&kp DE_SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
